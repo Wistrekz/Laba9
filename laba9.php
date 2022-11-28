@@ -16,15 +16,6 @@ if(isset($_POST['txt']))
     	}
     	fclose( $fileopen );
 	}
-	/*if($sql = mysqli_query($mysqli, $query))
-	{
-		    while($row = mysqli_fetch_array($sql))
-		    {
-		    	$str = $row['name'].": ".$row['text']."<br>";
-		        echo $str;
-		        //file_put_contents('message.txt', $str);
-		    }
-	}*/
 
 	//Записан файл
 	$fileopen = fopen($file, "r");
